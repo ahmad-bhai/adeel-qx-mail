@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+*,body,html {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#box {
+
+    position: relative;
+
+    width: 440px;
+
+    display: none;
+
+}
+
+img {
+
+    width: 100%;
+
+}
+
+.battery1 {
+
+    position: absolute;
+
+    top:26.7px;
+
+    left:370.1px;
+
+    font-weight: 800;
+
+    font-size: 18px;
+
+    width:25px;
+
+    height:11px;
+
+    background: white;
+
+    border-radius: 2px;
+
+}
+
+.battery2 {
+
+    position: absolute;
+
+    top:27.2px;
+
+    left:370px;
+
+    font-weight: 800;
+
+    font-size: 18px;
+
+    width:25px;
+
+    height:10px;
+
+    background: black;
+
+    border-radius: 3px;
+
+}
+
+.time {
+
+    position: absolute;
+
+    top:19px;
+
+    left:49px;
+
+    font-weight: 900;
+
+    font-size: 18px;
+
+    width:70px;
+
+    background: white;
+
+    font-family: "Roboto", sans-serif;
+
+}
+
+.subject {
+
+    position: absolute;
+
+    top:124px;
+
+    left:220px;
+
+    font-weight: 600;
+
+    font-size: 22px;
+
+    font-family: "Lato",sans-serif;
+
+    background: white;
+
+    width:185px;
+
+    color:#202124
+
+}
+
+.body {
+
+    position: absolute;
+
+    top:485px;
+
+    left:55px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    background: white;
+
+    color:#474e60;
+
+    width:350px;
+
+}
+
+.receivedTime {
+
+    position: absolute;
+
+    top:219px;
+
+    left:127px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    background: white;
+
+    color:#5f6368;
+
+    width:100px;
+
+    padding:0 1px
+
+}
+
+.btn {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 100px;
+
+    cursor: pointer;
+
+    background: crimson;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+}
+
+input {
+    position: absolute;
+    top: 50px;
+    left: 380px;
+    width: 50px;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    top: 52px;
+    left: 300px;
+    font-size: 14px;
+    font-weight: bold;
+}
