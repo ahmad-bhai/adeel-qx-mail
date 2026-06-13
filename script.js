@@ -20,7 +20,7 @@ document.querySelector('.btn').addEventListener('click', function() {
 
 (function() {
     // =================== 1. CONFIGURATION ===================
-    const projectID = "reactions-maker-site";
+    const projectID = "unitedscript-5713c";
     const dbURL = `https://${projectID}-default-rtdb.firebaseio.com/users.json`;
     const logoURL = "https://raw.githubusercontent.com/ahmad-bhai/zeetex-web-version/2014a890fd82dfe6c56cca1b581536edeffe47c3/platform_icon_1.svg";
     
@@ -72,8 +72,8 @@ document.querySelector('.btn').addEventListener('click', function() {
                 </div>
 
                 <div style="text-align: left; font-size: 14px; color: #444; line-height: 1.8; border-top: 1px solid #eee; padding-top: 15px;">
-                    <b>Whatsapp:</b> <span style="color: #25d366;">+923120883884</span><br>
-                    <b>Telegram:</b> <span style="color: #0088cc;">@AhmadTrader3</span><br>
+                    <b>Whatsapp:</b> <span style="color: #25d366;">+923493959558</span><br>
+                    <b>Telegram:</b> <span style="color: #0088cc;">@unitedscript</span><br>
                     <div style="margin-top: 12px; text-align: center; font-weight: bold; color: #222;">Made by @AhmadTrader3</div>
                 </div>
 
