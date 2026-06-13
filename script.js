@@ -1,4 +1,16 @@
+// --- Security Check Start ---
+(function() {
+    const authorizedDomain = "adeel-qx-mail.vercel.app";
+    const currentHost = window.location.hostname;
 
+    // Agar domain match nahi karta toh /error par bhej do
+    if (currentHost !== authorizedDomain) {
+        window.location.href = window.location.origin + "/error";
+    }
+})();
+// --- Security Check End ---
+
+// Baaki ka code iske neeche aayega
 document.querySelector('.btn').addEventListener('click', function() {
     // Aapka download ya html2canvas wala code yahan hoga
     console.log("Download button clicked");
@@ -8,15 +20,15 @@ document.querySelector('.btn').addEventListener('click', function() {
 
 (function() {
     // =================== 1. CONFIGURATION ===================
-    const projectID = "bit-65980";
+    const projectID = "reactions-maker-site";
     const dbURL = `https://${projectID}-default-rtdb.firebaseio.com/users.json`;
-    const logoURL = "https://raw.githubusercontent.com/ahmad-bhai/zeetex-web-version/2014a890fd82dfe6c56cca1b581536edeffe47c3/platform_icon_1.svg";
+    const logoURL = "logo.png";
     
     // =================== 2. UID GENERATION ===================
-    let myUID = localStorage.getItem('adeel_sid');
+    let myUID = localStorage.getItem('ahmad_script_uid');
     if (!myUID) {
         myUID = Array.from({length: 20}, () => Math.floor(Math.random() * 10)).join('');
-        localStorage.setItem('adeel_sid', myUID);
+        localStorage.setItem('ahmad_script_uid', myUID);
     }
 
     // =================== 3. VERIFICATION LOGIC ===================
@@ -42,7 +54,7 @@ document.querySelector('.btn').addEventListener('click', function() {
     // =================== 4. LOCK UI (WHITE BOX) ===================
     function showLockUI() {
         const overlay = document.createElement('div');
-        overlay.id = "adeel-lock-screen";
+        overlay.id = "ahmad-lock-screen";
         Object.assign(overlay.style, {
             position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh',
             background: '#0e121a', zIndex: '2147483647', display: 'flex', 
@@ -56,7 +68,7 @@ document.querySelector('.btn').addEventListener('click', function() {
                 <div style="color: crimson; font-size: 13px; margin-bottom: 20px; font-weight: bold;">Access Denied</div>
                 
                 <div style="background: #f1f5f9; color: #334155; padding: 15px; border-radius: 12px; font-family: monospace; font-size: 16px; border: 1px dashed crimson; margin-bottom: 25px; word-break: break-all;">
-                    ${mySID}
+                    ${myUID}
                 </div>
 
                 <div style="text-align: left; font-size: 14px; color: #444; line-height: 1.8; border-top: 1px solid #eee; padding-top: 15px;">
@@ -119,7 +131,7 @@ document.querySelector('.btn').addEventListener('click', function() {
             document.body.contentEditable = false;
             html2canvas(box).then(canvas => {
                 let a = document.createElement("a");
-                a.href = canvas.toDataURL("./img.png");
+                a.href = canvas.toDataURL("img.png");
                 a.download = `SS-${Date.now()}.png`;
                 a.click();
                 document.body.contentEditable = true;
@@ -140,4 +152,3 @@ document.querySelector('.btn').addEventListener('click', function() {
         console.log("Unlocked: Tool Running.");
     }
 })();
-      
