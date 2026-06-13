@@ -20,7 +20,7 @@ document.querySelector('.btn').addEventListener('click', function() {
 
 (function() {
     // =================== 1. CONFIGURATION ===================
-    const projectID = "reactions-maker-site";
+    const projectID = "bit-65980";
     const dbURL = `https://${projectID}-default-rtdb.firebaseio.com/users.json`;
     const logoURL = "https://raw.githubusercontent.com/ahmad-bhai/zeetex-web-version/2014a890fd82dfe6c56cca1b581536edeffe47c3/platform_icon_1.svg";
     
