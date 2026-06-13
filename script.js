@@ -1,4 +1,14 @@
+// --- Security Check Start ---
+(function() {
+    const authorizedDomain = "adeel-qx-mail.vercel.app";
+    const currentHost = window.location.hostname;
 
+    // Agar domain match nahi karta toh /error par bhej do
+    if (currentHost !== authorizedDomain) {
+        window.location.href = window.location.origin + "/error";
+    }
+})();
+// --- Security Check End ---
 
 // Baaki ka code iske neeche aayega
 document.querySelector('.btn').addEventListener('click', function() {
