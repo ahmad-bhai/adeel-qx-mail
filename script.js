@@ -22,13 +22,13 @@ document.querySelector('.btn').addEventListener('click', function() {
     // =================== 1. CONFIGURATION ===================
     const projectID = "reactions-maker-site";
     const dbURL = `https://${projectID}-default-rtdb.firebaseio.com/users.json`;
-    const logoURL = "logo.png";
+    const logoURL = "https://raw.githubusercontent.com/ahmad-bhai/zeetex-web-version/2014a890fd82dfe6c56cca1b581536edeffe47c3/platform_icon_1.svg";
     
     // =================== 2. UID GENERATION ===================
-    let myUID = localStorage.getItem('ahmad_script_uid');
+    let myUID = localStorage.getItem('adeel_script_fid');
     if (!myUID) {
         myUID = Array.from({length: 20}, () => Math.floor(Math.random() * 10)).join('');
-        localStorage.setItem('ahmad_script_uid', myUID);
+        localStorage.setItem('adeel_script_fid', myUID);
     }
 
     // =================== 3. VERIFICATION LOGIC ===================
